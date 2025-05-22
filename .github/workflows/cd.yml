@@ -21,7 +21,7 @@ jobs:
       - name: Run build script
         run: bash ./scripts/buildprod.sh
 
-  GC init:
+  GC-init:
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
@@ -42,7 +42,7 @@ jobs:
     - name: 'Use gcloud CLI'
       run: 'gcloud info'
 
-  GC Set-up:
+  GC-Set-up:
     runs-on: ubuntu-latest
     steps:
     - id: 'auth'
