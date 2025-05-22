@@ -22,7 +22,7 @@ jobs:
         run: bash ./scripts/buildprod.sh
 
   GC init:
-    # Add "id-token" with the intended permissions.
+    runs-on: ubuntu-latest
     permissions:
       contents: 'read'
       id-token: 'write'
